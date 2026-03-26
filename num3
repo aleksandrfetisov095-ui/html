@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mail Client (Absolute Layout)</title>
+    <style>
+        body { margin: 0; font-family: 'Times New Roman', Times, serif; background: white }
+        
+        .wrapper {
+            position: relative;
+            width: 100%;
+            height: 100vh; 
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+        }
+
+        .header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 60px;
+            background: white;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            box-sizing: border-box;
+            z-index: 10;
+        }
+
+    
+        .sidebar {
+            position: absolute;
+            top: 60px; 
+            left: 0;
+            width: 200px;
+            bottom: 0; 
+            background: white;
+            border-right: 1px solid #eee;
+            padding-top: 10px;
+            box-sizing: border-box;
+        }
+
+       
+        .emails {
+            position: absolute;
+            top: 60px;
+            left: 200px; 
+            right: 0;
+            bottom: 0;
+            overflow-y: auto; 
+            background: white;
+        }
+
+    
+        .logo { font-weight: bold; font-size: 20px; color: #555; }
+        .user { display: flex; align-items: center; gap: 10px; font-size: 14px; }
+        .avatar { width: 30px; height: 30px; background: orange; border-radius: 50%; }
+        
+        .menu-item {
+            padding: 10px 20px;
+            display: block;
+            color: gray;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .menu-item.active { background: #ffebee; color: #d32f2f; border-left: 4px solid red; }
+        
+        .email-row {
+            display: flex;
+            padding: 12px 20px;
+            border-bottom: 1px solid #eee;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        .email-row:hover { background: #fafafa; }
+        .sender { width: 150px; font-weight: bold; display: flex; align-items: center; gap: 5px; }
+        .subject { flex: 1; color: #333; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .date { width: 80px; text-align: right; color: #999; font-size: 12px; }
+        .star { color: #ddd; margin-right: 5px; }
+        .star.active { color: red; }
+
+        
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <header class="header">
+            <div class="logo">📧 MY MAIL</div>
+            <div class="user">user@mymail.com <div class="avatar"></div></div>
+        </header>
+
+      
+        <nav class="sidebar">
+            <a href="#" class="menu-item active">📥 Incoming</a>
+            <a href="#" class="menu-item">📤 Outgoing</a>
+            <a href="#" class="menu-item">🕒 Drafts</a>
+            <a href="#" class="menu-item">🗑️ Spam</a>
+        </nav>
+
+        <main class="emails">
+            <div class="email-row">
+                <div class="sender"><span class="star active">★</span> me, Alex</div>
+                <div class="subject">Trip to South America</div>
+                <div class="date">12 apr.</div>
+            </div>
+            <div class="email-row">
+                <div class="sender"><span class="star">☆</span> me, John</div>
+                <div class="subject">Santa Monica trip</div>
+                <div class="date">12 apr.</div>
+            </div>
+            <div class="email-row">
+                <div class="sender"><span class="star">☆</span> Mari White</div>
+                <div class="subject">Report (march 2019)</div>
+                <div class="date">10 apr.</div>
+            </div>
+            <div style="height: 1000px; padding: 20px; color: #ccc;">(Место для остальных писем...)</div>
+        </main>
+    </div>
+
+</body>
+</html>
+
