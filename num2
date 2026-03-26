@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Article</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            line-height: 1.6;
+            color: gray;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-top: 0;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+
+
+        .article-text {
+            font-size: 16px;
+            margin-bottom: 30px;
+            text-align: justify;
+        }
+        .article-text p {
+            margin-bottom: 15px;
+        }
+
+        .gallery {
+            display: flex;
+            gap: 20px;
+        }
+
+        .image-item {
+            flex: 1;
+            text-align: center;
+        }
+
+        .image-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            display: block;
+        }
+
+        .caption {
+            font-size: 14px;
+            color: #666;
+            margin-top: 8px;
+            font-style: italic;
+            font-family: Arial, sans-serif;
+        }
+
+        @media (min-width: 801px) {
+            .layout-wrapper {
+                display: flex;
+                gap: 40px;
+            }
+            .text-column {
+                flex: 1; 
+                min-width: 0;
+            }
+            .images-column {
+                flex: 0 0 350px; 
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+            .gallery {
+                flex-direction: column;
+                gap: 20px;
+            }
+            .image-item {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="layout-wrapper">
+            <div class="text-column">
+                <h1>Cat</h1>
+                <div class="article-text">
+                    <p>The cat (Felis catus) is a small carnivorous mammal. It is the only domesticated species in the family Felidae and often referred to as the domestic cat to distinguish it from the wild members of the family. The cat is either a house cat, kept as a pet, or a feral cat, freely ranging and avoiding human contact. A house cat is valued by humans for companionship and its ability to hunt rodents. About 60 cat breeds are recognized by various cat registries.</p>
+                    
+                    <p>Cats are similar in anatomy to the other felid species, with a strong flexible body, quick reflexes, sharp teeth and retractable claws adapted to killing small prey. They are predators who are most active at dawn and dusk (crepuscular). Cats can hear sounds too faint or too high in frequency for human ears, such as those made by mice and other small animals. Compared to humans, they see better in the dark (they see in near total darkness) and have a better sense of smell, but poorer color vision. Cats, despite being solitary hunters, are a social species. Cat communication includes the use of cat vocalizations including meowing, purring, trilling, hissing, growling and grunting as well as cat-specific body language. Cats also communicate by secreting and perceiving pheromones.</p>
+                    
+                    <p>Female domestic cats can have kittens from spring to late autumn, with litter sizes ranging from two to five kittens. Domestic cats can be bred and shown as registered pedigreed cats, a hobby known as cat fancy. Failure to control the breeding of pet cats by spaying and neutering, as well as abandonment of pets, has resulted in large numbers of feral cats worldwide, contributing to the extinction of entire bird species, and evoking population control.</p>
+                </div>
+            </div>
+            <div class="images-column">
+                <div class="gallery">
+                    <div class="image-item">
+                        <img src="https://n1s1.hsmedia.ru/1d/11/63/1d1163d83fe46b573738dae2123e8570/1336x922_1_c4c3e5ae6b3b1f50382f59fdb70678be@1336x922_0xm70iMcuo_2817158231576217293.jpg.webp" alt="Tabby cat">
+                        <div class="caption">A tabby cat in snowy weather</div>
+                    </div>
+                    <div class="image-item">
+                        <img src="https://0d314c86-f76b-45cc-874e-45816116a667.selcdn.net/27216431-9cf1-4038-aef0-0032325e1235.jpg" alt="Hockey pajamas">
+                        <div class="caption">The hockey pajamas on a cat's body are like a hairbrush to help clean and detangle fur</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
+
