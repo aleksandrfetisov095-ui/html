@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новости</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: white;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .news-container {
+            display: flex; 
+            gap: 20px;     
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        
+        .news-column {
+            flex: 1; 
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+        }
+
+        
+        .news-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+
+        
+        .news-content {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1; 
+        }
+
+        .news-title {
+            font-size: 18px;
+            margin-top: 0;
+            margin-bottom: 10px;
+            color:gray;
+        }
+
+        .news-text {
+            font-size: 14px;
+            line-height: 1.6;
+            color: gray;
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+
+        .read-more {
+            text-decoration: none;
+            color: blue;
+            font-weight: bold;
+            font-size: 14px;
+            align-self: flex-start;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="news-container">
+        
+        <article class="news-column">
+            <img src="https://via.placeholder.com/400x200/3498db/ffffff?text=News+1" alt="Новость 1" class="news-image">
+            <div class="news-content">
+                <h2 class="news-title">Технологии будущего</h2>
+                <p class="news-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </p>
+                <a href="#" class="read-more">Читать далее →</a>
+            </div>
+        </article>
+
+        <article class="news-column">
+            <img src="https://via.placeholder.com/400x200/e74c3c/ffffff?text=News+2" alt="Новость 2" class="news-image">
+            <div class="news-content">
+                <h2 class="news-title">Спорт и здоровье</h2>
+                <p class="news-text">
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                </p>
+                <a href="#" class="read-more">Читать далее →</a>
+            </div>
+        </article>
+
+        <article class="news-column">
+            <img src="https://via.placeholder.com/400x200/2ecc71/ffffff?text=News+3" alt="Новость 3" class="news-image">
+            <div class="news-content">
+                <h2 class="news-title">Путешествия по миру</h2>
+                <p class="news-text">
+                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                </p>
+                <a href="#" class="read-more">Читать далее →</a>
+            </div>
+        </article>
+
+    </div>
+
+</body>
+</html>
