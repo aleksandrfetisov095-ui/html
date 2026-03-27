@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Boards</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f4f5f7;
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden; 
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            background-color: #fff;
+            padding: 15px 20px;
+            border-bottom: 1px solid #ddd;
+            flex-shrink: 0; 
+            z-index: 10;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .header h1 {
+            font-size: 24px;
+            color: #172b4d;
+        }
+
+        .boards-container {
+            display: flex;
+            align-items: flex-start;
+            padding: 20px;
+            gap: 20px;
+            overflow-x: auto; 
+            height: calc(100vh - 60px);
+            scroll-behavior: smooth;
+        }
+
+
+        .board {
+            background-color: #ebecf0;
+            border-radius: 6px;
+            width: 320px; 
+            min-width: 300px;
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+            max-height: 100%; 
+            flex-shrink: 0; 
+        }
+
+        .board-header {
+            padding: 10px 15px;
+            font-weight: bold;
+            color: #172b4d;
+            font-size: 16px;
+            flex-shrink: 0;
+        }   
+        .task-list {
+            padding: 0 10px 10px 10px;
+            overflow-y: auto; 
+            flex-grow: 1;
+        }
+
+        .task-card {
+            background-color: #fff;
+            border-radius: 4px;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+            font-size: 14px;
+            color: #172b4d;
+            line-height: 1.4;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .task-tag {
+            display: inline-block;
+            font-size: 10px;
+            padding: 2px 6px;
+            border-radius: 3px;
+            margin-bottom: 5px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .tag-dev { background: #e3fcef; color: green; }
+        .tag-design { background: #deebff; color: blue; }
+        .tag-urgent { background: #ffebe6; color: red; }
+
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <h1>MY BOARDS</h1>
+    </header>
+
+    <div class="boards-container">
+        
+        <div class="board">
+            <div class="board-header">To Do</div>
+            <div class="task-list">
+                <div class="task-card">
+                    <span class="task-tag tag-design">Design</span>
+                    <p>Create wireframes for the new landing page.</p>
+                </div>
+                <div class="task-card">
+                    <span class="task-tag tag-dev">Dev</span>
+                    <p>Setup React project structure.</p>
+                </div>
+                <div class="task-card">
+                    <span class="task-tag tag-urgent">Urgent</span>
+                    <p>Fix login bug on mobile devices.</p>
+                </div>
+                <div class="task-card">
+                    <p>Research competitors' pricing models.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="board">
+            <div class="board-header">In Progress</div>
+            <div class="task-list">
+                <div class="task-card">
+                    <span class="task-tag tag-dev">Dev</span>
+                    <p>Implement authentication API.</p>
+                </div>
+                <div class="task-card">
+                    <span class="task-tag tag-design">Design</span>
+                    <p>Update color palette based on feedback.</p>
+                </div>
+                <div class="task-card">
+                    <p>Write unit tests for user service.</p>
+                </div>
+                <div class="task-card">
+                    <p>Optimize images for faster loading.</p>
+                </div>
+                <div class="task-card">
+                    <span class="task-tag tag-urgent">Urgent</span>
+                    <p>Database migration script failed.</p>
+                </div>
+                <div class="task-card">
+                    <p>Review pull request #45.</p>
+                </div>
+                <div class="task-card">
+                    <p>Update documentation for API v2.</p>
+                </div>
+                <div class="task-card">
+                    <p>Prepare presentation for stakeholders.</p>
+                </div>
+                <div class="task-card">
+                    <p>Fix CSS alignment in footer.</p>
+                </div>
+                <div class="task-card">
+                    <p>Configure CI/CD pipeline.</p>
+                </div>
+                <div class="task-card">
+                    <p>Deploy to staging environment.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="board">
+            <div class="board-header">Done</div>
+            <div class="task-list">
+                <div class="task-card">
+                    <span class="task-tag tag-dev">Dev</span>
+                    <p>Initial project setup completed.</p>
+                </div>
+                <div class="task-card">
+                    <span class="task-tag tag-design">Design</span>
+                    <p>Logo design approved by client.</p>
+                </div>
+                <div class="task-card">
+                    <p>Domain name purchased.</p>
+                </div>
+                <div class="task-card">
+                    <p>Team meeting held.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="board">
+            <div class="board-header">Backlog</div>
+            <div class="task-list">
+                <div class="task-card">
+                    <p>Idea: Dark mode toggle.</p>
+                </div>
+                <div class="task-card">
+                    <p>Idea: Export data to PDF.</p>
+                </div>
+                <div class="task-card">
+                    <p>Idea: User profile customization.</p>
+                </div>
+                <div class="task-card">
+                    <p>Idea: Integration with Slack.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="board">
+            <div class="board-header">Archive</div>
+            <div class="task-list">
+                <div class="task-card">
+                    <p>Old project Q1 2023.</p>
+                </div>
+                <div class="task-card">
+                    <p>Legacy code cleanup.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
+
