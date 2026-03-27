@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Чат</title>
+    <style>
+        body { margin: 0; font-family: 'Times New Roman', Times, serif; background: #e5ddd5; display: flex; justify-content: center; padding: 20px; }
+        .chat { width: 100%; max-width: 600px; background: #efe7dd; border-radius: 8px; overflow: hidden; display: flex; flex-direction: column; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+        .header { background: #ededed; padding: 15px; text-align: center; font-weight: bold; border-bottom: 1px solid white; }
+        .messages { padding: 20px; display: flex; flex-direction: column; gap: 15px; overflow-y: auto; max-height: 80vh; }
+        
+        .row { display: flex; align-items: flex-end; gap: 10px; max-width: 80%; }
+        .row.left { align-self: flex-start; }
+        .row.right { align-self: flex-end; flex-direction: row-reverse; }
+        
+        .avatar { 
+            width: 40px; 
+            height: 40px; 
+            border-radius: 50%; 
+            background-color: #ccc; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px; 
+            flex-shrink: 0;
+            user-select: none;
+        }
+        
+        .bubble { background: #fff; padding: 10px 15px; border-radius: 8px; box-shadow: 0 1px 2px rgba(0,0,0,0.1); display: flex; flex-direction: column; }
+        .left .bubble { border-top-left-radius: 0; }
+        .right .bubble { background: #dcf8c6; border-top-right-radius: 0; align-items: flex-end; }
+        
+        .name { font-size: 12px; font-weight: bold; margin-bottom: 4px; }
+        .left .name { color: pink; }
+        .right .name { color: green; }
+        
+        .text { font-size: 14px; line-height: 1.4; margin-bottom: 4px; }
+        .time { font-size: 10px; color: gray; text-align: right; }
+        .right .time { color: green; }
+    </style>
+</head>
+<body>
+
+    <div class="chat">
+        <div class="header">Групповой чат</div>
+        <div class="messages">
+            <div class="row left">
+                <div class="avatar">👩</div>
+                <div class="bubble">
+                    <span class="name">Anna</span>
+                    <span class="text">Привет! Кто идет на конференцию?</span>
+                    <span class="time">10:15</span>
+                </div>
+            </div>
+
+         
+            <div class="row right">
+                <div class="avatar">👨</div>
+                <div class="bubble">
+                    <span class="name">Я</span>
+                    <span class="text">Я буду! Уже зарегистрировался.</span>
+                    <span class="time">10:17</span>
+                </div>
+            </div>
+
+            
+            <div class="row left">
+                <div class="avatar">👤</div>
+                <div class="bubble">
+                    <span class="name">Maxim</span>
+                    <span class="text">Я тоже планирую. Во сколько начало?</span>
+                    <span class="time">10:20</span>
+                </div>
+            </div>
+
+            <div class="row right">
+                <div class="avatar">👨</div>
+                <div class="bubble">
+                    <span class="name">Я</span>
+                    <span class="text">В 19:00. Встречаемся у входа за 15 мин.</span>
+                    <span class="time">10:22</span>
+                </div>
+            </div>
+
+            <div class="row left">
+                <div class="avatar">👩</div>
+                <div class="bubble">
+                    <span class="name">Anna</span>
+                    <span class="text">Отлично! До встречи 😉</span>
+                    <span class="time">10:25</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
