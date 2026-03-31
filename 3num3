@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            padding: 40px 20px;
+            color: gray;
+        }
+
+        .form-container {
+            background-color: #fff;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .form-block {
+            margin-bottom: 30px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .form-block:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .block-title {
+            font-size: 20px;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .form-row {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-size: 14px;
+            color: #7f8c8d;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        select {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 15px;
+            color:gray;
+            outline: none;
+            transition: border-color 0.3s;
+            background-color: #fff;
+        }
+
+        input:focus,
+        select:focus {
+            border-color: #3498db;
+        }
+
+        .checkbox-group {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-top: 10px;
+        }
+
+        .checkbox-label {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            color: #555;
+            cursor: pointer;
+        }
+
+        .checkbox-label input {
+            margin-right: 10px;
+            width: 18px;
+            height: 18px;
+            cursor: pointer;
+        }
+
+        .btn-submit {
+            width: 100%;
+            padding: 15px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+        }
+
+        .btn-submit:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <form action="#" method="POST">
+            
+            <div class="form-block">
+                <h2 class="block-title">Регистрационные данные</h2>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="login">Логин</label>
+                        <input type="text" id="login" name="login" placeholder="Придумайте логин" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Пароль</label>
+                        <input type="password" id="password" name="password" placeholder="********" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-block">
+                <h2 class="block-title">Персональные данные</h2>
+                
+                <div class="form-row personal-data-row">
+                    <div class="form-group">
+                        <label for="firstname">Имя</label>
+                        <input type="text" id="firstname" name="firstname" placeholder="Иван" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastname">Фамилия</label>
+                        <input type="text" id="lastname" name="lastname" placeholder="Иванов" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="birthdate">Дата рождения</label>
+                        <input type="date" id="birthdate" name="birthdate" required>
+                    </div>
+                </div>
+
+                <div class="form-row gender-row">
+                    <div class="form-group">
+                        <label for="gender">Пол</label>
+                        <select id="gender" name="gender">
+                            <option value="" disabled selected>Выберите пол</option>
+                            <option value="male">Мужской</option>
+                            <option value="female">Женский</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-block">
+                <h2 class="block-title">Подписка и правила</h2>
+                
+                <div class="checkbox-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="newsletter">
+                        Я хочу подписаться на рассылку новостей
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="rules" checked required>
+                        Я согласен с правилами ресурса
+                    </label>
+                </div>
+            </div>
+
+            <button type="submit" class="btn-submit">Зарегистрироваться</button>
+        </form>
+    </div>
+
+</body>
+</html>
