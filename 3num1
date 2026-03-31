@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card Details</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .card-container {
+            background-color: #93c5be; 
+            width: 100%;
+            max-width: 500px;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            padding-bottom: 30px;
+        }
+
+        .header-bar {
+            background-color: orange;
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            width: 80%;
+            border-bottom-right-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        .form-content {
+            padding: 0 30px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-label {
+            display: block;
+            color: gray;
+            font-size: 14px;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 12px 15px;
+            background-color: #a9d6d0; 
+            border: none;
+            border-radius: 4px;
+            color: #333;
+            font-size: 16px;
+            outline: none;
+            transition: background 0.3s;
+        }
+
+        .form-input:focus {
+            background-color: #bcebe4;
+        }
+
+        .form-input::placeholder {
+            color: #7daaa3;
+        }
+
+        .row-group {
+            display: flex;
+            gap: 20px;
+        }
+
+        .col {
+            flex: 1;
+        }
+
+        .btn-submit {
+            width: 100%;
+            padding: 15px;
+            background-color: #e67e22;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background 0.3s;
+        }
+
+        .btn-submit:hover {
+            background-color: #d35400;
+        }
+
+        .illustration {
+            position: absolute;
+            right: -20px;
+            bottom: -20px;
+            width: 200px;
+            height: 200px;
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        .planet {
+            position: absolute;
+            width: 140px;
+            height: 140px;
+            background-color: #4a6fa5;
+            border-radius: 50%;
+            right: 0;
+            bottom: 40px;
+        }
+        
+        .crater {
+            position: absolute;
+            background-color: #3b5680;
+            border-radius: 50%;
+        }
+        .c1 { width: 20px; height: 20px; top: 30px; left: 30px; }
+        .c2 { width: 15px; height: 15px; bottom: 40px; right: 30px; }
+
+        .ground {
+            position: absolute;
+            width: 100px;
+            height: 60px;
+            background-color:yellow;
+            border-radius: 50% 50% 0 0;
+            bottom: 0;
+            right: 20px;
+        }
+        
+        .flag-pole {
+            position: absolute;
+            width: 4px;
+            height: 60px;
+            background-color: white;
+            bottom: 40px;
+            right: 60px;
+        }
+        .flag {
+            position: absolute;
+            width: 30px;
+            height: 20px;
+            background-color: red;
+            top: 0;
+            right: 0;
+            clip-path: polygon(0 0, 100% 50%, 0 100%);
+        }
+
+        .star {
+            position: absolute;
+            color:yellow;
+            font-size: 20px;
+        }
+        .s1 { top: 20px; right: 40px; }
+        .s2 { top: 60px; right: 10px; font-size: 12px; }
+
+        .stripe {
+            position: absolute;
+            background-color: #7fb3a9;
+            border-radius: 10px;
+        }
+        .st1 { width: 10px; height: 40px; top: 50px; right: 10px; }
+        .st2 { width: 10px; height: 20px; top: 80px; right: 25px; }
+
+    </style>
+</head>
+<body>
+
+    <div class="card-container">
+        <div class="header-bar">Credit Card Details</div>
+
+        <div class="form-content">
+            <form action="#">
+                <div class="form-group">
+                    <label class="form-label">Card Number</label>
+                    <input type="text" class="form-input" placeholder="1234 5678 9012 3456" maxlength="19">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Name On Card</label>
+                    <input type="text" class="form-input" placeholder="Name Surname" style="text-transform: uppercase;">
+                </div>
+
+                <div class="row-group">
+                    <div class="col form-group">
+                        <label class="form-label">Expiry Date</label>
+                        <div style="display: flex; gap: 5px;">
+                            <input type="text" class="form-input" placeholder="MM" maxlength="2" style="text-align: center;">
+                            <input type="text" class="form-input" placeholder="YYYY" maxlength="4" style="text-align: center;">
+                        </div>
+                    </div>
+                    
+                    <div class="col form-group">
+                        <label class="form-label">CVV / CVN</label>
+                        <input type="password" class="form-input" placeholder="***" maxlength="3">
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-submit">Pay Now</button>
+            </form>
+        </div>
+
+        <div class="illustration">
+            <div class="planet">
+                <div class="crater c1"></div>
+                <div class="crater c2"></div>
+            </div>
+            <div class="ground"></div>
+            <div class="flag-pole">
+                <div class="flag"></div>
+            </div>
+            <div class="star s1">★</div>
+            <div class="star s2">★</div>
+            <div class="stripe st1"></div>
+            <div class="stripe st2"></div>
+        </div>
+    </div>
+</body>
+</html>ы
