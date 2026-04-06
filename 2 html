@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julia Jacobson | The Photographer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="container header-inner">
+            <div class="logo">
+                Julia Jacobson
+                <span>The Photographer</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Works</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="column-2 about-img">
+                    <img src="https://i.pinimg.com/474x/9e/49/4d/9e494d4c73755d108a32dd747b939d81.jpg" alt="Julia Jacobson">
+                </div>
+                <div class="column-2 about-text">
+                    <h3>My name is Julia Jacobson</h3>
+                    <p>I am a professional photographer based in New York. I specialize in portrait, landscape, and event photography. My goal is to capture the beauty of the moment and tell your story through images.</p>
+                    <p>I have been shooting for over 10 years and have worked with clients from all over the world.</p>
+                    
+                    <div class="contact-info">
+                        123 Main Street<br>
+                        New York, NY 10001<br>
+                        +1 (555) 123-4567<br>
+                        julia@jacobson.com<br>
+                        www.juliajacobson.com
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="works">
+        <div class="container">
+            <h2 class="section-title">My Last Works</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://technovybor.ru/wa-data/public/shop/products/00/webp/94/39/3994/images/6018/6018.520.webp" alt="Camera">
+                    <div class="gallery-overlay">
+                        <p>Camera Gear</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.squarespace-cdn.com/content/v1/5b9fbb28ee1759803459c790/1537298542319-QDOCNRWUXMSTELRILL8C/beautiful-natural-light-portraits-by-toronto-photographer-livepixels.jpg" alt="Portrait">
+                    <div class="gallery-overlay">
+                        <p>Portrait Session</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/76/A_Wedding_Story.jpg/250px-A_Wedding_Story.jpg" alt="Wedding">
+                    <div class="gallery-overlay">
+                        <p>Wedding Story</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1516961642265-531546e84af2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Film">
+                    <div class="gallery-overlay">
+                        <p>Film Photography</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1500634245200-e5245c7574ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Landscape">
+                    <div class="gallery-overlay">
+                        <p>Nature Landscape</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTu2gQ7ZLr97kqLJiM_3fK7V0LBHDLm7qcLrw&s" alt="Fashion">
+                    <div class="gallery-overlay">
+                        <p>Fashion Shoot</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="blog">
+        <div class="container">
+            <div class="blog-item">
+                <div class="blog-img">
+                    <img src="https://thumbs.dreamstime.com/b/none-335643419.jpg" alt="Coffee">
+                </div>
+                <div class="blog-content">
+                    <h3>Morning coffee</h3>
+                    <p>Coffee lovers everywhere can't get enough morning coffee!</p>
+                </div>
+            </div>
+
+            <div class="blog-item">
+                <div class="blog-img">
+                    <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Interior">
+                </div>
+                <div class="blog-content">
+                    <h3>Interior Details</h3>
+                    <p>Sometimes the smallest details tell the biggest stories. Capturing the texture of old wood and the play of shadows in this vintage apartment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="large-photo-section">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Landscape">
+        <div class="photo-caption">
+            <h3>Landscape Photo</h3>
+            <p>Amazing natural light and composition make this photo stand out.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-social">
+                <a href="#">Follow me on Instagram</a>
+            </div>
+            <div class="footer-social">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Pinterest</a>
+                <a href="#">500px</a>
+            </div>
+            <p class="copyright">&copy; Copyright 2023 Julia Jacobson</p>
+        </div>
+    </footer>
+
+</body>
+</html>
