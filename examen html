@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Company Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="sidebar-header">Company</div>
+    <a href="#" class="nav-item active" data-page="dashboard">
+      <img src="images/dashboard_white.svg" alt="Dashboard" class="nav-icon-img">
+      Dashboard
+    </a>
+    <a href="#" class="nav-item" data-page="profile">
+      <img src="images/account_gray.svg" alt="Profile" class="nav-icon-img">
+      User Profile
+    </a>
+    <a href="#" class="nav-item" data-page="maps">
+      <img src="images/map_gray.svg" alt="Maps" class="nav-icon-img">
+      Maps
+    </a>
+    <a href="#" class="nav-item" data-page="notifications">
+      <img src="images/notify_gray.svg" alt="Notifications" class="nav-icon-img">
+      Notifications
+    </a>
+    <a href="#" class="nav-item" data-page="support">
+      <img src="images/support_gray.svg" alt="Support" class="nav-icon-img">
+      Support
+    </a>
+  </aside>
+
+  <main class="main-content">
+
+    <section id="dashboard" class="page-section active">
+      <h1 class="page-title">Dashboard</h1>
+
+      <section class="top-stats">
+        <div class="stat-card">
+          <div class="stat-top">
+            <div class="stat-icon green">
+               <img src="images/data_white.svg" alt="Data" class="stat-icon-img">
+            </div>
+            <div class="stat-info">
+              <h3>Used Space</h3>
+              <p>49/50 GB</p>
+            </div>
+          </div>
+          <div class="stat-footer">
+            <div class="stat-footer-content">
+              <img src="C:\Users\user\Web\images\alert.png" alt="Warning" class="mini-icon">
+              <span>Get more space...</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-top">
+            <div class="stat-icon orange">
+                <img src="images/shop_white.svg" alt="Shop" class="stat-icon-img">
+            </div>
+            <div class="stat-info">
+              <h3>Revenue</h3>
+              <p>$34,245</p>
+            </div>
+          </div>
+          <div class="stat-footer">
+            <div class="stat-footer-content">
+              <img src="C:\Users\user\Web\images\calendar.png" alt="Clock" class="mini-icon">
+              <span>Last 24 Hours</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-top">
+            <div class="stat-icon blue">
+                <img src="images/tag_white.svg" alt="Tag" class="stat-icon-img">
+            </div>
+            <div class="stat-info">
+              <h3>Fixed Issues</h3>
+              <p>75</p>
+            </div>
+          </div>
+          <div class="stat-footer">
+            <div class="stat-footer-content">
+              <img src="C:\Users\user\Web\images\down.png" alt="Download" class="mini-icon">
+              <span>Tracked from Github</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-top">
+            <div class="stat-icon pink">
+                <img src="images/paperplane_white.svg" alt="Paper Plane" class="stat-icon-img">
+            </div>
+            <div class="stat-info">
+              <h3>Followers</h3>
+              <p>+245</p>
+            </div>
+          </div>
+          <div class="stat-footer">
+            <div class="stat-footer-content">
+              <img src="C:\Users\user\Web\images\time.png" alt="Update" class="mini-icon">
+              <span>Just updated</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="charts-row">
+        <div class="chart-card">
+          <div class="chart-placeholder chart-green">
+            <img src="images/graphics.svg" alt="Graphics" class="chart-img">
+          </div>
+          <div class="chart-title">Daily Sales</div>
+          <div class="chart-subtitle">55% increase in today sales</div>
+        </div>
+        <div class="chart-card">
+          <div class="chart-placeholder chart-orange">
+              <img src="images/graphics.svg" alt="Graphics" class="chart-img">
+          </div>
+          <div class="chart-title">Email Subscriptions</div>
+          <div class="chart-subtitle">Last Campaign Performance</div>
+        </div>
+        <div class="chart-card">
+          <div class="chart-placeholder chart-blue">
+            <img src="images/graphics.svg" alt="Graphics" class="chart-img">
+          </div>
+          <div class="chart-title">Completed Tasks</div>
+          <div class="chart-subtitle">Last Campaign Performance</div>
+        </div>
+      </section>
+
+      <section class="bottom-section">
+        
+        <div class="tasks-card">
+          <div class="tasks-header-bg">
+            <div class="tasks-header-content">
+              <span class="task-tab active">Tasks:</span>
+              <span class="task-tab">Bugs</span>
+              <span class="task-tab">Website</span>
+              <span class="task-tab">Server</span>
+            </div>
+          </div>
+          <ul class="task-list">
+            <li class="task-item">
+              <input type="checkbox" class="task-checkbox" checked>
+              <span class="task-text">Sign contract for "What are conference organizers afraid of?"</span>
+              <div class="task-actions">
+                <img src="images/edit.png" alt="Edit" class="action-icon">
+                <img src="images/remove.png" alt="Remove" class="action-icon">
+              </div>
+            </li>
+            <li class="task-item">
+              <input type="checkbox" class="task-checkbox">
+              <span class="task-text">Lines From Great Russian Literature? Or E-mails From My Boss?</span>
+              <div class="task-actions">
+                <img src="images/edit.png" alt="Edit" class="action-icon">
+                <img src="images/remove.png" alt="Remove" class="action-icon">
+              </div>
+            </li>
+            <li class="task-item">
+              <input type="checkbox" class="task-checkbox">
+              <span class="task-text">Sign contract for "What are conference organizers afraid of?"</span>
+              <div class="task-actions">
+                <img src="images/edit.png" alt="Edit" class="action-icon">
+                <img src="images/remove.png" alt="Remove" class="action-icon">
+              </div>
+            </li>
+            <li class="task-item">
+              <input type="checkbox" class="task-checkbox" checked>
+              <span class="task-text">Sign contract for "What are conference organizers afraid of?"</span>
+              <div class="task-actions">
+                <img src="images/edit.png" alt="Edit" class="action-icon">
+                <img src="images/remove.png" alt="Remove" class="action-icon">
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="employees-card">
+          <div class="employees-header">
+            <h3>Employees Stats</h3>
+            <p>New employees on 19th September, 2019</p>
+          </div>
+          <table class="employees-table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Salary</th>
+                <th>Country</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>1</td><td>Dakota Rice</td><td>$36.738</td><td>Niger</td></tr>
+              <tr><td>1</td><td>Dakota Rice</td><td>$36.738</td><td>Niger</td></tr>
+              <tr><td>1</td><td>Dakota Rice</td><td>$36.738</td><td>Niger</td></tr>
+              <tr><td>1</td><td>Dakota Rice</td><td>$36.738</td><td>Niger</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+      </section>
+    </section>
+
+    <section id="profile" class="page-section">
+      <h1 class="page-title">User Profile</h1>
+      <div class="profile-container">
+        <div class="edit-profile-card">
+          <div class="edit-profile-header">
+            <h2>Edit Profile</h2>
+            <p>Complete your profile</p>
+          </div>
+          <form>
+            <div class="form-grid">
+              <div class="form-group">
+                <label>Company</label>
+                <input type="text">
+              </div>
+              <div class="form-group">
+                <label>Username</label>
+                <input type="text">
+              </div>
+              <div class="form-group">
+                <label>Email address</label>
+                <input type="email">
+              </div>
+              <div class="form-group">
+                <label>First name</label>
+                <input type="text">
+              </div>
+              <div class="form-group">
+                <label>Last name</label>
+                <input type="text">
+              </div>
+              <div class="form-group full-width">
+                <label>Address</label>
+                <input type="text">
+              </div>
+              <div class="form-group">
+                <label>City</label>
+                <input type="text">
+              </div>
+              <div class="form-group">
+                <label>Country</label>
+                <input type="text">
+              </div>
+              <div class="form-group">
+                <label>Postal code</label>
+                <input type="text" >
+              </div>
+              <div class="form-group full-width">
+                <label>About me</label>
+                <textarea rows="4"></textarea>
+              </div>
+            </div>
+            <button type="submit" class="update-btn">UPDATE PROFILE</button>
+          </form>
+        </div>
+
+        <div class="user-info-card">
+          <img src="https://itstepru.sharepoint.com/sites/320/Shared%20Documents/General/avatar.jpg" alt="User Photo" class="user-avatar">
+          <div class="user-role">CEO / CO-FOUNDER</div>
+          <div class="user-name">Alec Thompson</div>
+          <div class="user-bio">
+            Don't be scared of the truth because we need to restart the human foundation in truth And I love you like Kanye loves Kanye I love Rick Owens’ bed design but the back is...
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="maps" class="page-section">
+      <h1 class="page-title">Maps</h1>
+      <p>Здесь будет карта...</p>
+    </section>
+
+    <section id="notifications" class="page-section">
+      <h1 class="page-title">Notifications</h1>
+      <p>Здесь будут уведомления...</p>
+    </section>
+
+    <section id="support" class="page-section">
+      <h1 class="page-title">Support</h1>
+      <p>Здесь будет поддержка...</p>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-links">
+        <a href="#">ABOUT</a>
+        <a href="#">BLOG</a>
+        <a href="#">LICENSES</a>
+      </div>
+      <div class="footer-copyright">
+        2019 - made with love
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.querySelectorAll('.nav-item').forEach(item => {
+      item.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelectorAll('.nav-item').forEach(i => i.classList.remove('active'));
+        this.classList.add('active');
+        const pageId = this.getAttribute('data-page');
+        document.querySelectorAll('.page-section').forEach(section => section.classList.remove('active'));
+        document.getElementById(pageId).classList.add('active');
+      });
+    });
+  </script>
+
+</body>
+</html>
